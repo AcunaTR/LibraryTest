@@ -37,17 +37,23 @@
   </build>
   
   <repositories>
-	    <repository>
-	        <id>libs</id>
-	        <url>file:${project.parent.basedir}/libs</url>
-	    </repository>
-	</repositories>
+        <repository>
+            <id>maven-s3-release-repo</id>
+            <name>S3 Release Repository</name>
+            <url>s3://acuna-lambda/releases</url>
+        </repository>
+        <repository>
+            <id>maven-s3-snapshot-repo</id>
+            <name>S3 Snapshot Repository</name>
+            <url>s3://acuna-lambda/snapshots</url>
+        </repository>
+    </repositories>
   
   <dependencies>
-    <dependency>
-    	<groupId>com.thomsonreuters.lambda</groupId>
-    	<artifactId>Acuna-Library</artifactId>
-    	<version>1.0.0</version>
-    </dependency>
+  	<dependency>
+  		<groupId>com.thomsonreuters.lambda</groupId>
+  		<artifactId>Acuna-Library</artifactId>
+  		<version>1.0.0</version>
+  	</dependency>
   </dependencies>
 </project>

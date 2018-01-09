@@ -56,17 +56,17 @@
   <distributionManagement>
    <snapshotRepository>
      <id>acuna-lambda</id>
-     <url>s3://acuna-lambda/snapshot</url>
+     <url>s3://acuna-lambda/snapshots</url>
    </snapshotRepository>
    <repository>
      <id>acuna-lambda</id>
-     <url>s3://acuna-lambda/release</url>
+     <url>s3://acuna-lambda/releases</url>
    </repository>
  </distributionManagement>
  <repositories>
    <repository>
      <id>acuna-lambda</id>
-     <url>s3://acuna-lambda/release</url>
+     <url>s3://acuna-lambda/releases</url>
    </repository>
  </repositories>
   

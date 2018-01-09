@@ -19,6 +19,11 @@
                 <artifactId>aws-maven</artifactId>
                 <version>5.0.0.RELEASE</version>
             </extension>
+            <extension>
+       			<groupId>org.kuali.maven.wagons</groupId>
+       			<artifactId>maven-s3-wagon</artifactId>
+       			<version>1.2.1</version>
+     		</extension>
         </extensions>
     <plugins>
       <plugin>
@@ -48,18 +53,22 @@
     </plugins>
   </build>
   
-  <repositories>
-        <repository>
-            <id>acuna-lambda</id>
-            <name>S3 Release Repository</name>
-            <url>s3://acuna-lambda/releases</url>
-        </repository>
-        <repository>
-            <id>acuna-lambda</id>
-            <name>S3 Snapshot Repository</name>
-            <url>s3://acuna-lambda/snapshots</url>
-        </repository>
-    </repositories>
+  <distributionManagement>
+   <snapshotRepository>
+     <id>acuna-lambda</id>
+     <url>s3://acuna-lambda/snapshot</url>
+   </snapshotRepository>
+   <repository>
+     <id>acuna-lambda</id>
+     <url>s3://acuna-lambda/release</url>
+   </repository>
+ </distributionManagement>
+ <repositories>
+   <repository>
+     <id>acuna-lambda</id>
+     <url>s3://acuna-lambda/release</url>
+   </repository>
+ </repositories>
   
   <dependencies>
   	<dependency>

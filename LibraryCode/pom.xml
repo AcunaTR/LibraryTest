@@ -63,18 +63,19 @@
      <url>s3://acuna-lambda/releases</url>
    </repository>
  </distributionManagement>
+ 
  <repositories>
    <repository>
      <id>acuna-lambda</id>
-     <url>s3://acuna-lambda/releases</url>
+     <url>https://s3.amazonaws.com/acuna-lambda/releases</url>
    </repository>
  </repositories>
   
-  <dependencies>
-  	<dependency>
-  		<groupId>com.thomsonreuters.lambda</groupId>
-  		<artifactId>Acuna-Library</artifactId>
-  		<version>1.0.0</version>
-  	</dependency>
-  </dependencies>
+ <dependencies>
+ 	<dependency>
+ 		<groupId>com.thomsonreuters.lambda</groupId>
+ 		<artifactId>Acuna-Library</artifactId>
+ 		<version>1.0.0</version>
+ 	</dependency>
+ </dependencies>
 </project>

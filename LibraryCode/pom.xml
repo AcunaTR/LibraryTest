@@ -50,12 +50,12 @@
   
   <repositories>
         <repository>
-            <id>maven-s3-release-repo</id>
+            <id>acuna-lambda</id>
             <name>S3 Release Repository</name>
             <url>s3://acuna-lambda/releases</url>
         </repository>
         <repository>
-            <id>maven-s3-snapshot-repo</id>
+            <id>acuna-lambda</id>
             <name>S3 Snapshot Repository</name>
             <url>s3://acuna-lambda/snapshots</url>
         </repository>

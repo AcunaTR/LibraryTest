@@ -38,8 +38,7 @@
   
   <repositories>
 	    <repository>
-	        <id>project.local</id>
-	        <name>project</name>
+	        <id>libs</id>
 	        <url>file:${project.parent.basedir}/libs</url>
 	    </repository>
 	</repositories>

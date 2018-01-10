@@ -69,6 +69,10 @@
      <id>acuna-lambda</id>
      <url>https://s3.amazonaws.com/acuna-lambda/releases</url>
    </repository>
+      <repository>
+     <id>acuna-lambda</id>
+     <url>s3://acuna-lambda/releases</url>
+   </repository>
  </repositories>
   
  <dependencies>
